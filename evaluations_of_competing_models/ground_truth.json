@@ -1,0 +1,71 @@
+[
+    {
+        "audio_file": "test_audio_1.mp3",
+        "diarization": {
+            "speakers": [
+                {
+                    "speaker_1": [
+                        "11.53s - 25.272s"
+                    ],
+                    "speaker_2": [
+                        "9.0s - 11.63s"
+                    ],
+                    "speaker_3": [
+                        "0.02s - 3.0s"
+                    ],
+                    "speaker_4": [
+                        "3.0s - 6.0s"
+                    ],
+                    "speaker_5": [
+                        "6.0s - 9.0s"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "audio_file": "test_audio_2.mp3",
+        "diarization": {
+            "speakers": [
+                {
+                    "speaker_3": [
+                        "0.02s - 3.0s"
+                    ],
+                    "speaker_1": [
+                        "3.0s - 8.98s"
+                    ],
+                    "speaker_2": [
+                        "8.98s - 16.344s"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "audio_file": "test_audio_3.mp3",
+        "diarization": {
+            "speakers": [
+                {
+                    "speaker_1": [
+                        "0.02s - 5.98s"
+                    ],
+                    "speaker_2": [
+                        "5.98s - 14.076s"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "audio_file": "test_audio_4.mp3",
+        "diarization": {
+            "speakers": [
+                {
+                    "speaker_1": [
+                        "0s - 3.855s"
+                    ]
+                }
+            ]
+        }
+    }
+]
