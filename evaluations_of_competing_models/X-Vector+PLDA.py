@@ -334,7 +334,7 @@ if __name__ == "__main__":
     # # --- TRAINING ---
     # if not os.path.exists(model_file):
     #     print(f"Model file not found at {model_file}. Starting training...")
-    #     dataset_folder = "./pythonProject/dataset"
+    #     dataset_folder = "../diarization_dataset" #local path to our dataset
     #     if not os.path.isdir(dataset_folder):
     #         raise FileNotFoundError(f"Training dataset folder not found at: {dataset_folder}")
     #
@@ -354,7 +354,7 @@ if __name__ == "__main__":
 
     eval_system = EnhancedXVectorDiarization.load_model(model_file)
     true_segments_data = eval_system.convert_ground_truth_to_segments(ground_truth_json)
-    dataset_path = "./pythonProject/final_evaluation_dataset"
+    dataset_path = "../test"
 
     all_true_labels, all_pred_labels = [], []
 

@@ -143,7 +143,7 @@ if __name__ == "__main__":
     with open('../binary_classifier/best_model.pkl', 'rb') as model_file:
         clf = pickle.load(model_file)
 
-    input_audio_file = "../test/K-15 - Ako sakas da sednam.mp3"
+    input_audio_file = "../test/test_audio_1.mp3"
     X_input = process_audio(input_audio_file)
 
     if X_input is not None:

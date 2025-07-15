@@ -692,9 +692,9 @@ if __name__ == "__main__":
 
     vbx_system = VBxDiarization(frame_rate=100, seg_len=1.5, num_mix=16)
 
-    vbx_system.train_on_dataset("./pythonProject/dataset")
-
-    vbx_system.save_model("vbx_model.pkl")
+    # vbx_system.train_on_dataset("../diarization_dataset")
+    #
+    # vbx_system.save_model("vbx_model.pkl")
 
     vbx_system.load_model("./vbx_model.pkl")
 
@@ -703,7 +703,7 @@ if __name__ == "__main__":
 
     ground_truth_segments = vbx_system.convert_ground_truth_to_segments(ground_truth_json)
 
-    folder_path = "./pythonProject/evaluation_data"
+    folder_path = "../test"
     audio_files = []
 
     for file_name in os.listdir(folder_path):

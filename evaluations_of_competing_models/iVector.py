@@ -339,10 +339,11 @@ class EnhancedIVectorDiarization:
 if __name__ == "__main__":
     model_file = os.path.abspath('ivector_model.pkl')
 
+    # Uncomment this if you want to train on another dataset
     # # --- TRAINING ---
     # if not os.path.exists(model_file):
     #     print(f"Model file not found at {model_file}. Starting training...")
-    #     dataset_folder = './pythonProject/dataset'
+    #     dataset_folder = '../diarization_dataset'
     #     if not os.path.isdir(dataset_folder):
     #         raise FileNotFoundError(f"Training dataset folder not found at: {dataset_folder}")
     #     ivector_system = EnhancedIVectorDiarization()
@@ -358,7 +359,7 @@ if __name__ == "__main__":
         ground_truth_json = json.load(f)
 
     true_segments_data = eval_system.convert_ground_truth_to_segments(ground_truth_json)
-    dataset_path = "./pythonProject/evaluation_data"
+    dataset_path = "../test"
     all_true_labels, all_pred_labels = [], []
 
     for audio_file_base, gt_segments in true_segments_data.items():

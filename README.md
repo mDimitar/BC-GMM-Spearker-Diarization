@@ -12,6 +12,11 @@ This Python script performs **speaker diarization** on an input audio file. It u
 
 ## Requirements
 
+## Important notice: Make sure you run your IDE as administrator
+
+This is important due to some models are required write permissions in directories for saving
+the trained model.
+
 Ensure you have Python 3.7+ and the following Python packages installed:
 
 - `numpy`
@@ -24,3 +29,21 @@ Install the required packages using pip:
 
 ```bash
 pip install numpy librosa scikit-learn
+```
+## HOW TO: Use the speaker count predictor
+
+- Navigate in `number_of_speakers_predictor` folder
+- Change the path to the needed audio file in the `input_audio_file` variable
+- Execute `python predict_number_of_speakers.py`
+
+## HOW TO: Use the diarization module
+
+- Navigate in `diarizer` folder
+- Change the path to the needed audio file in the `input_audio_file` variable
+- Execute `python diarization.py`
+
+## HOW TO: Evaluate the performance of the competing models
+
+- Navigate in `evaluations_of_competing_models` folder
+- Open the wanted model script,for ex. `VBx.py` python file
+- Execute `python <script-name>.py`, for ex `python VBx.py`
